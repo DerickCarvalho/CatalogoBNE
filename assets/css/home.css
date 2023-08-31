@@ -1,0 +1,217 @@
+/* -----====[ IMPORTS & VARIABLES ]====----- */
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+:root {
+    --primaty-font: 'Oswald', sans-serif; 
+}
+
+/* -----====[ /IMPORTS & VARIABLES  ]====----- */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--primaty-font);
+}
+
+/* -----====[ GERAL USE CLASS ]====----- */
+
+.width-100 {
+    width: 100%;
+}
+
+.flex-row-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-row-left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.flex-row-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.flex-row-space-around {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flex-row-space-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-column-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-column-space-around {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flex-column-space-between {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.space {
+    padding: 20px 120px;
+}
+
+.link-as-button {
+    text-decoration: none;
+
+}
+
+.div-as-button {
+    font-size: 20px;
+    background-color: #ffffff;
+    padding: 8px 12px;
+    margin: 0 15px;
+    border-radius: 5px;
+    transition: linear transform 0.1s;
+}
+.div-as-button img {
+    width: 25px;
+    margin: 0 5px;
+}
+.div-as-button:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+/* -----====[ /GERAL USE CLASS ]====----- */
+
+/* -----====[ HEADER ]====----- */
+
+header {
+    background-color: #000000;
+    position: sticky;
+    top: 0;
+}
+.logo, .logo img {
+    width: 350px;
+    transition: linear transform 0.1s;
+}
+.logo:hover {
+    cursor: pointer;
+    transform: scale(1.025);
+}
+
+/* -[MENU HAMBURGUER]- */
+
+.menu-hamburguer {
+    display: none;
+}
+.line {
+    width: 40px;
+    background: #FFFFFF;
+    padding: 1.5px;
+    margin: 4px;
+    border-radius: 2px;
+}
+/*FAZER FUNCIONAR O LEFT*/
+.mobile-menu {
+    display: none;
+    border-radius: 10px;
+}
+.menu-hidden {
+    left: 100%;
+    transition: left 1s linear;
+}
+
+/* -[/MENU HAMBURGUER]- */
+
+/* -----====[ /HEADER ]====----- */
+
+main {
+    padding: 1000px 0;
+}
+
+/* -----====[ MAIN ]====----- */
+
+
+
+/* -----====[ /MAIN ]====----- */
+
+/* -----====[ RESPONSIVITY ]====----- */
+
+@media (max-width: 1280px) {
+    .logo, .logo img {
+        width: 200px;
+    }
+
+    .div-as-button {
+        font-size: 14px;
+        padding: 6px 10px;
+        margin: 0 5px;
+    }
+}
+
+@media (max-width: 900px) {
+    header {
+        position: inherit;
+    }
+    .desktop-menu {
+        display: none;
+    }
+    .menu-hamburguer {
+        display: flex;
+    }
+    .mobile-menu {
+        width: 200px;
+        display: flex;
+        background-color: #000000;
+        padding: 50px 20px;
+        position:fixed;
+        top: 0;
+    }
+    .div-as-button {
+        margin: 5px 0;
+        width: 80%;
+    }
+    .close {
+        width: 30px;
+        font-weight: 600;
+        margin-right: 18px;
+    }
+    .space {
+        padding: 20px 50px;
+    }
+}
+
+@media (max-width: 500px) {
+    .logo, .logo img {
+        width: 130px;
+    }
+    .line {
+        width: 30px;
+        margin: 3px;
+    }
+}
+
+@media (max-width: 350px) {
+    .space {
+        padding: 20px 25px;
+    }
+}
+
+/* -----====[ /RESPONSIVITY ]====----- */
