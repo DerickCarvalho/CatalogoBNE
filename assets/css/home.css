@@ -76,6 +76,10 @@
     align-items: center;
 }
 
+.break-row {
+    flex-wrap: wrap;
+}
+
 .space {
     padding: 20px 120px;
 }
@@ -113,8 +117,19 @@
     transform: scale(1.15);
 }
 
-.default-info {
-    
+.default-button {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 5px 30px;
+    margin: 10px 0;
+    background-color: #FFFFFF;
+    border: 2px solid #868686;
+    border-radius: 10px;
+    transition: linear transform 0.1s;
+}
+.default-button:hover {
+    cursor: pointer;
+    transform: scale(1.05);
 }
 
 /* -----====[ /GERAL USE CLASS ]====----- */
@@ -166,17 +181,75 @@ header {
 
 /* -----====[ /HEADER ]====----- */
 
+/* -----====[ MAIN ]====----- */
+
 main {
     padding: 10;
 }
-
-/* -----====[ MAIN ]====----- */
-
 .banner {
     width: 100%;
 }
+.basic-infos {
+    padding: 20px 0;
+}
+.brands {
+    width: 100%;
+    margin-bottom: 150px;
+}
+.brand-logo {
+    width: 250px;
+    height: 150px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    margin: 10px;
+    transition: linear transform 0.1s;
+}
+.brand-logo img {
+    width: 250px;
+    padding: 20px;
+}
+.brand-logo:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
 
 /* -----====[ /MAIN ]====----- */
+
+/* -----====[ FOOTER ]====----- */
+
+footer {
+    background-color: #000000;
+}
+.fut-infos {
+    color: #FFFFFF;
+}
+.fut-infos p {
+    font-size: 20px;
+    padding: 30px 0;
+}
+.fut-infos img {
+    width: 350px;   
+}
+
+.sugest-form {
+    width: 100%;
+}
+.sugest-form h3 {
+    color: #FFFFFF;
+}
+.sugest-form input{
+    font-size: 18px;
+    margin: 10px;
+    width: 80%;
+    padding: 5px;
+}
+.sugest-form textarea {
+    width: 80%;
+    padding: 5px;
+    font-size: 18px;
+}
+
+/* -----====[ /FOOTER ]====----- */
 
 /* -----====[ RESPONSIVITY ]====----- */
 
@@ -195,6 +268,9 @@ main {
 @media (max-width: 1000px) {
     .space {
         padding: 10px 50px;
+    }
+    .mid-title {
+        font-size: 24px;
     }
 }
 
@@ -231,6 +307,35 @@ main {
     .space {
         padding: 20px 50px;
     }
+    .basic-infos {
+        font-size: 10px;
+    }
+    .mid-title {
+        font-size: 20px;
+    }
+    .brand-logo {
+        width: 200px;
+        height: 120px;
+    }
+    .brand-logo img {
+        width: 170px;        
+    }
+    .fut-infos img {
+        width: 150px;
+    }
+    .fut-infos p {
+        padding: 25px 0;
+        font-size: 16px;
+    }
+    .sugest-form h3 {
+        font-size: 14px;
+    }
+    .sugest-form input {
+        font-size: 10px;
+    }
+    .sugest-form textarea {
+        font-size: 10px;
+    }
 }
 
 @media (max-width: 500px) {
@@ -240,6 +345,31 @@ main {
     .line {
         width: 30px;
         margin: 3px;
+    }
+    .basic-infos {
+        flex-direction: column;
+        font-size: 10px;
+    }
+    .default-info {
+        padding: 10px 0;
+    }
+    .mid-title {
+        font-size: 16px;
+    }
+    .brand-logo {
+        width: 120px;
+        height: 70px;
+    }
+    .brand-logo img {
+        width: 120px;        
+    }
+    footer {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .fut-infos {
+        width: 100%;
+        text-align: center;
     }
 }
 

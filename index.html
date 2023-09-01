@@ -106,35 +106,73 @@
     </header>
 
     <main class="flex-colum-center">
+        
+        <img class="banner" src="./assets/img/banner.jpg" alt="">
+
         <section class="flex-column-center space">
-            <img class="banner" src="./assets/img/banner.jpg" alt="">
 
-            <div class="flex-row-space-between width-100 space">
-                <div class="default-info text-center">
-                    <p><strong>Frete Grátis</strong></p>
-                    <p>para Norte e Nordesde</p>
+            <div class="basic-infos flex-row-space-between width-100">
+                <div class="flex-row-space-around width-100">
+                    <div class="default-info text-center">
+                        <p><strong>Frete Grátis</strong></p>
+                        <p>para Norte e Nordesde</p>
+                    </div>
+    
+                    <div class="default-info text-center">
+                        <p><strong>Instrumentos Regulados</strong></p>
+                        <p>antes do envio</p>
+                    </div>
                 </div>
 
-                <div class="default-info text-center">
-                    <p><strong>Instrumentos Regulados</strong></p>
-                    <p>antes do envio</p>
-                </div>
-
-                <div class="default-info text-center">
-                    <p><strong>Produtos Originais</strong></p>
-                    <p>com nota fiscal e garantia</p>
-                </div>
-
-                <div class="default-info text-center">
-                    <p><strong>Pague Parcelado!</strong></p>
-                    <p>em até 12x sem juros</p>
+                <div class="flex-row-space-around width-100">
+                    <div class="default-info text-center">
+                        <p><strong>Produtos Originais</strong></p>
+                        <p>com nota fiscal e garantia</p>
+                    </div>
+    
+                    <div class="default-info text-center">
+                        <p><strong>Pague Parcelado!</strong></p>
+                        <p>em até 12x sem juros</p>
+                    </div>
                 </div>
             </div>
         </section>
+
+        <h1 class="mid-title width-100 flex-row-center space">Principais Marcas</h1>
+
+        <section class="brands width-100 flex-row-space-around break-row">
+
+            <a class="brand-logo flex-column-center" href="">
+                <img src="./assets/img/crafter.png" alt="">
+            </a>
+
+            <a class="brand-logo flex-column-center" href="">
+                <img src="./assets/img/strinberg.png" alt="">
+            </a>
+
+            <a class="brand-logo flex-column-center" href="">
+                <img src="./assets/img/yamaha.png" alt="">
+            </a>
+
+            <a class="brand-logo flex-column-center" href="">
+                <img src="./assets/img/tagima.png" alt="">
+            </a>
+        </section>
     </main>
 
-    <footer>
+    <footer class="space flex-row-space-between">
+        <div class="fut-infos flex-column-left width-100">
+            <img src="./assets/img/big-logo.png" alt="">
+            <p>&copy;2023.2 - Dom of Music</p>
+            <p>Developed by <a href="https://github.com/DerickCarvalho">Derick Carvalho</a></p>
+        </div>
 
+        <form class="sugest-form flex-column-center" action="" method="post">
+            <h3>Envie-nos uma sugestão</h3>
+            <input type="text" name="name" id="name" placeholder="Digite seu nome" maxlength="30">
+            <textarea name="nome" id="nome" cols="30" rows="5" placeholder="Digite sua sugestão"></textarea>
+            <input style="width: 30%;" class="default-button" type="submit" value="Enviar">
+        </form>
     </footer>
     <script src="./assets/js/home.js"></script>
 </body>
