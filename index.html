@@ -7,57 +7,130 @@
     <title>Dom of Music - Home</title>
 </head>
 <body>
-    <header class="flex-row-space-between space">
-        <div class="logo flex-row-center">
-            <img src="./assets/img/big-logo.png" alt="">
+    <!-- DESKTOP HEADER -->
+    <header class="flex-colum-center">
+        <div class="top-header flex-row-space-between space">
+            <div class="logo flex-row-center">
+                <img src="./assets/img/big-logo.png" alt="">
+            </div>
+    
+            <nav class="desktop-menu flex-row-space-around">
+                <a class="transform-in-button" href="">
+                    <img src="./assets/img/wpp-logo.png" alt=""> Atendimento
+                </a>
+    
+                <a class="transform-in-button" href="">
+                    <img src="./assets/img/profile.png" alt=""> Conta
+                </a>
+    
+                <a class="transform-in-button" href="">
+                    <img src="./assets/img/mark-car.png" alt=""> Carrinho
+                </a>
+            </nav>
+    
+            <div id="menu-hamburguer" class="menu-hamburguer flex-column-center">
+                <div id="top" class="line"></div>
+                <div id="mid" class="line"></div>
+                <div id="fut" class="line"></div>
+            </div>  
         </div>
-
-        <nav class="desktop-menu flex-row-space-around">
-            <div class="div-as-button flex-row-center">
-                <img src="./assets/img/wpp-logo.png" alt=""> Atendimento
-            </div>
-
-            <div class="div-as-button flex-row-center">
-                <img src="./assets/img/profile.png" alt=""> Conta
-            </div>
-
-            <div class="div-as-button flex-row-center">
-                <img src="./assets/img/mark-car.png" alt=""> Carrinho
-            </div>
-        </nav>
-
-        <div id="menu-hamburguer" class="menu-hamburguer flex-column-center">
-            <div id="top" class="line"></div>
-            <div id="mid" class="line"></div>
-            <div id="fut" class="line"></div>
-        </div>
-
         
+        <div class="fut-header flex-center">
+            <nav class="flex-row-space-between space">
+                <a href="" class="default-category">
+                    Violões
+                </a>
+
+                <a href="" class="default-category">
+                    Guitarras
+                </a>
+
+                <a href="" class="default-category">
+                    Instrumentos de Corda
+                </a>
+
+                <a href="" class="default-category">
+                    Encordoamentos
+                </a>
+
+                <a href="" class="default-category">
+                    Acessórios
+                </a>
+            </nav>
+        </div>
     </header>
 
+    <!-- MOBILE HEADER -->
     <header class="mobile-header flex-row-right">
         <nav id="mobile-menu" class="mobile-menu flex-column-center menu-hidden">
             <div class="width-100 flex-row-right">
-                <div id="close-menu" class="close div-as-button flex-row-center">
+                <div style="background-color: #000; color: #FFF;" id="close-menu" class="close transform-in-button flex-row-center">
                     X
                 </div>
             </div>
-            <div class="div-as-button flex-row-center">
+
+            <a class="transform-in-button width-100" href="">
                 <img src="./assets/img/wpp-logo.png" alt=""> Atendimento
-            </div>
-    
-            <div class="div-as-button flex-row-center">
+            </a>
+
+            <a class="transform-in-button width-100" href="">
                 <img src="./assets/img/profile.png" alt=""> Conta
-            </div>
-    
-            <div class="div-as-button flex-row-center">
+            </a>
+
+            <a class="transform-in-button width-100" href="">
                 <img src="./assets/img/mark-car.png" alt=""> Carrinho
-            </div>
+            </a>
+
+            <p style="width: 100%; background-color: #868686; padding: 1px; margin: 5px 0;"></p>
+
+            <a href="" class="transform-in-button flex-row-center width-100 text-center">
+                Violões
+            </a>
+
+            <a href="" class="transform-in-button flex-row-center width-100 text-center">
+                Guitarras
+            </a>
+
+            <a href="" class="transform-in-button flex-row-center width-100 text-center">
+                Instrumentos de Corda
+            </a>
+
+            <a href="" class="transform-in-button flex-row-center width-100 text-center">
+                Encordoamentos
+            </a>
+
+            <a href="" class="transform-in-button flex-row-center width-100 text-center">
+                Acessórios
+            </a>
         </nav>
     </header>
 
-    <main>
+    <main class="flex-colum-center">
+        <section class="flex-column-center space">
+            <img class="banner" src="./assets/img/banner.jpg" alt="">
 
+            <div class="flex-row-space-between width-100 space">
+                <div class="default-info text-center">
+                    <p><strong>Frete Grátis</strong></p>
+                    <p>para Norte e Nordesde</p>
+                </div>
+
+                <div class="default-info text-center">
+                    <p><strong>Instrumentos Regulados</strong></p>
+                    <p>antes do envio</p>
+                </div>
+
+                <div class="default-info text-center">
+                    <p><strong>Produtos Originais</strong></p>
+                    <p>com nota fiscal e garantia</p>
+                </div>
+
+                <div class="default-info text-center">
+                    <p><strong>Pague Parcelado!</strong></p>
+                    <p>em até 12x sem juros</p>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>

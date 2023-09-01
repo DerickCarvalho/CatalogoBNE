@@ -21,6 +21,10 @@
     width: 100%;
 }
 
+.text-center {
+    text-align: center;
+}
+
 .flex-row-center {
     display: flex;
     justify-content: center;
@@ -76,26 +80,41 @@
     padding: 20px 120px;
 }
 
-.link-as-button {
+.transform-in-button {
     text-decoration: none;
-
-}
-
-.div-as-button {
+    color: #FFFFFF;
     font-size: 20px;
-    background-color: #ffffff;
+    background-color: #000000;
     padding: 8px 12px;
-    margin: 0 15px;
+    margin: 5px 15px;
     border-radius: 5px;
     transition: linear transform 0.1s;
 }
-.div-as-button img {
+.transform-in-button img {
     width: 25px;
     margin: 0 5px;
 }
-.div-as-button:hover {
+.transform-in-button:hover {
     cursor: pointer;
     transform: scale(1.05);
+}
+
+.default-category {
+    text-decoration: none;
+    color: #000000;
+    background-color: #868686;
+    padding: 5px 10px;
+    border: 0;
+    font-size: 22px;
+    transition: linear transform 0.05s;
+}
+.default-category:hover {
+    cursor: pointer;
+    transform: scale(1.15);
+}
+
+.default-info {
+    
 }
 
 /* -----====[ /GERAL USE CLASS ]====----- */
@@ -106,6 +125,13 @@ header {
     background-color: #000000;
     position: sticky;
     top: 0;
+}
+.top-header {
+    width: 100%;
+}
+.fut-header, .fut-header div {
+    width: 100%;
+    background-color: #868686;
 }
 .logo, .logo img {
     width: 350px;
@@ -128,14 +154,12 @@ header {
     margin: 4px;
     border-radius: 2px;
 }
-/*FAZER FUNCIONAR O LEFT*/
 .mobile-menu {
     display: none;
     border-radius: 10px;
 }
 .menu-hidden {
     left: 100%;
-    transition: left 1s linear;
 }
 
 /* -[/MENU HAMBURGUER]- */
@@ -143,12 +167,14 @@ header {
 /* -----====[ /HEADER ]====----- */
 
 main {
-    padding: 1000px 0;
+    padding: 10;
 }
 
 /* -----====[ MAIN ]====----- */
 
-
+.banner {
+    width: 100%;
+}
 
 /* -----====[ /MAIN ]====----- */
 
@@ -166,11 +192,20 @@ main {
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
+    .space {
+        padding: 10px 50px;
+    }
+}
+
+@media (max-width: 850px) {
     header {
         position: inherit;
     }
     .desktop-menu {
+        display: none;
+    }
+    .fut-header {
         display: none;
     }
     .menu-hamburguer {
