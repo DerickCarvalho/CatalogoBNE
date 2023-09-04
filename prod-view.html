@@ -11,7 +11,7 @@
     <!-- DESKTOP HEADER -->
     <header class="flex-colum-center">
         <div class="top-header flex-row-space-between space">
-            <div class="logo flex-row-center">
+            <div id="button-logo" class="logo flex-row-center">
                 <img src="./assets/img/big-logo.png" alt="">
             </div>
     
@@ -222,6 +222,7 @@
         </form>
     </footer>
     <script>
+        /* MENU HAMBURGUER FUNCIONALITY */
         let mobileMenu = document.getElementById('mobile-menu');
 
         document.getElementById('menu-hamburguer').addEventListener('click', () => {
@@ -230,6 +231,11 @@
 
         document.getElementById('close-menu').addEventListener('click', () => {
             mobileMenu.classList.add('menu-hidden');
+        });
+
+        /* GENERAL FUNCIONALITY */
+        document.getElementById('button-logo').addEventListener('click', () => {
+            window.location.href = './index.html';
         });
     </script>
 </body>

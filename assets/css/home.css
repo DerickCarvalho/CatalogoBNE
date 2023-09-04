@@ -254,6 +254,8 @@ main {
     padding: 10px;
     margin: 10px;
     transition: linear border 0.1s;
+    text-decoration: none;
+    color: #000000;
 }
 .prod:hover {
     cursor: pointer;
