@@ -268,6 +268,8 @@ header {
     border-radius: 10px;
     margin: 10px;
     transition: linear border 0.1s;
+    color: #000000;
+    text-decoration: none;
 }
 .prod:hover {
     border: 2px solid #868686;

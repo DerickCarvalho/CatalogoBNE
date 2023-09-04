@@ -240,6 +240,8 @@ main {
     padding: 10px;
     margin: 10px;
     transition: linear border 0.1s;
+    color: #000000;
+    text-decoration: none;
 }
 .prod:hover {
     cursor: pointer;
